@@ -23,4 +23,8 @@ urlpatterns = [
         'registration/',
         include('registration.urls')
     ),
+    path(
+        'api/',
+        include('registration.api_urls')
+    ),
 ]
