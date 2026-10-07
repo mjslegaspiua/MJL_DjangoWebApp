@@ -85,7 +85,7 @@ function renderStudents() {
     const row = document.createElement("tr");
     const cell = document.createElement("td");
     cell.colSpan = 5;
-    cell.textContent = "No matching Student records found.";
+    cell.textContent = "No matching student records found.";
     row.appendChild(cell);
     tableBody.appendChild(row);
   } else {
@@ -96,7 +96,7 @@ function renderStudents() {
         student.student_name,
         student.program,
         student.year_level,
-        student.email
+        student.email,
       ].forEach(value => {
         const cell = document.createElement("td");
         cell.textContent = value ?? "";
@@ -107,7 +107,8 @@ function renderStudents() {
   }
 
   if (resultCount) {
-    resultCount.textContent = `Showing ${filteredStudents.length} of ${allStudents.length} students`;
+    resultCount.textContent =
+      `Showing ${filteredStudents.length} of ${allStudents.length} students`;
   }
 }
 

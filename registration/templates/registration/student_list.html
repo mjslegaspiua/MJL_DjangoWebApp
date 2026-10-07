@@ -17,6 +17,8 @@
             {% csrf_token %}
             <button type="submit">Logout</button>
         </form>
+    {% else %}
+        <p><a href="{% url 'login' %}">Log in</a></p>
     {% endif %}
 
     <h1>Student Registration</h1>
@@ -35,7 +37,7 @@
 
     {% if students %}
 
-        <table *border*="1" cellpadding="10">
+        <table border="1" cellpadding="10">
 
             <tr>
 
