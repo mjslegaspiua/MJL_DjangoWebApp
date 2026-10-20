@@ -52,3 +52,8 @@ fresh download starts with an empty database. Run `python manage.py migrate`
 to create it. Create a new superuser on each computer if you need to sign in;
 accounts and student records from another computer are not included in the
 source download.
+
+## Module 07 Version Control Practice
+
+This documentation-only change is part of the Module 07 Git and GitHub
+branch workflow exercise.
